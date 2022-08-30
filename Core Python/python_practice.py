@@ -18,3 +18,17 @@ def rotate_list(ls, k):
     return ls
 
 print(rotate_list(list,b))
+
+
+# Check for descending order list
+
+def isDescending(list):
+    
+    bool = True
+
+    for i in range(0, len(list) - 1):
+        if list[i] < list[i + 1]:
+            bool = False;
+    return bool        
+
+print(isDescending(list))
